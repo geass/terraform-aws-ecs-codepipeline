@@ -18,6 +18,11 @@ variable "enabled" {
   description = "Enable `CodePipeline` creation"
 }
 
+variable "codebuild_enabled" {
+  default     = "true"
+  description = "Enable `CodePipeline` codebuild creation"
+}
+
 variable "ecs_cluster_name" {
   type        = "string"
   description = "ECS Cluster Name"
